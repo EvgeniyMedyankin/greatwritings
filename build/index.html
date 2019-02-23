@@ -11,6 +11,8 @@
     <link rel="shortcut icon" href="./img/favicon.ico">
     <!-- Подключение полной версии Bootstrap 4.3.1 для проекта -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Подключение Font-Awesome -->
+    <link rel="stylesheet" href="./css/font-awesome/css/font-awesome.min.css">
     <!-- Подключение минифицированного CSS со стилями для всех страниц -->
     <link rel="stylesheet" href="./css/system.min.css">
     <!-- Подключение минифицированного CSS со стилями для текущей страницы -->
@@ -18,18 +20,420 @@
 </head>
 <body>
 <header>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row head align-items-center justify-content-between">
+                <div class="d-none d-xl-block col-xl-4 guarantees">
+                    <span>100% Authenticity Guarantee &nbsp; &nbsp; 100% Plagiarism Free</span>
+                </div>
 
+                <div class="col-3 col-sm-3 col-md-1 d-block d-xl-none">
+                    <i class="fa fa-bars" aria-hidden="true" id="menu"></i>
+                </div>
+
+                <div class="col-9 col-sm-9 col-md-6 col-xl-4 text-center">
+                    <img src="../img/logo.png" class="logo" alt="Logo">
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-5 col-xl-4 login text-right">
+                    <a href="#" class="btn pink-btn">LiveChat</a>
+                    <a href="#" class="btn blue-btn">Login</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+        <div class="row d-none d-xl-block">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Order Now</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">How It Works</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Guarantees</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Why Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Discounts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">FAQ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Prices</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Testimonials</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+            </li>
+        </ul>
+        </div>
+        </div>
+    </div>
+    <div class="mobile-menu">
+        <div class="hidden">
+        <ul class="tabs">
+            <li class="tab"><a href="#">About Us</a></li>
+            <li class="tab"><a href="#">Order Now</a></li>
+            <li class="tab"><a href="#">Services</a></li>
+            <li class="tab"><a href="#">How It Works</a></li>
+            <li class="tab"><a href="#">Guarantees</a></li>
+            <li class="tab"><a href="#">Why Us</a></li>
+            <li class="tab"><a href="#">Discounts</a></li>
+            <li class="tab"><a href="#">FAQ</a></li>
+            <li class="tab"><a href="#">Prices</a></li>
+            <li class="tab"><a href="#">Testimonials</a></li>
+            <li class="tab"><a href="#">Blog</a></li>
+            <li class="tab"><a href="#">Contact Us</a></li>
+        </ul>
+        </div>
+    </div>
 </header>
 
 <main>
     <section>
+        <div class="bg-image">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 col-sm-3 col-md-1 col-xl-12">
+                        Welcome to
+                        <br />
+                        <span>Great-Writings.com</span>,
+                        <br />
+                        a custom writing service extraordinaire!
+                    </div>
+
+                    <div class="col-9 col-sm-9 col-md-6 col-xl-12">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row steps">
+                <div class="col-12 col-xl-6 order-xl-1 order-md-1 first">
+                    <div class="card mb-3 shadow-sm bg-white rounded">
+                        <div class="row no-gutters">
+                            <div class="col-md-4 img"></div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Step 1: Complete the official Great-Writings Order Form</h5>
+                                    <p class="card-text">Customers are instructed to complete the official
+                                        Great-Writings.com Order Form found on our
+                                        website.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6 order-xl-3 order-md-2 second">
+                    <div class="card mb-3 shadow-sm bg-white rounded">
+                        <div class="row no-gutters">
+                            <div class="col-md-4 img"></div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Step 2: Order Confirmation</h5>
+                                    <p class="card-text">After the customer has placed an order from Great-Writings.com,
+                                        he or she will be emailed a
+                                        confirmation that lets him or her know that the order has been accepted.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6 order-xl-2 order-md-3 third">
+                    <div class="card mb-3 shadow-sm bg-white rounded">
+                        <div class="row no-gutters">
+                            <div class="col-md-4 img"></div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Step 3: The Writing Commences</h5>
+                                    <p class="card-text">Once payment has been confirmed, Great-Writings.com assigns the
+                                        order to the writer with the highest
+                                        qualifications to write that specific order.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6 order-xl-4 order-md-4 fourth">
+                    <div class="card mb-3 shadow-sm bg-white rounded">
+                        <div class="row no-gutters">
+                            <div class="col-md-4 img"></div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Step 4: Delivery of the Paper</h5>
+                                    <p class="card-text">The finished paper will be emailed to the customer as soon as
+                                        it has been completed. It will be
+                                        available
+                                        to download from our website at that time, or the customer may opt to receive it
+                                        via email.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container about-us">
+            <div class="row">
+                <p>During his or her years at university, the average student is challenged with writing large numbers
+                    of
+                    essays each semester. Since they have lives outside of school, most students find themselves short
+                    of
+                    time and energy, and simply are not able to write every required paper. The best way to resolve this
+                    dilemma is to buy a paper from a professional writing company online. Great-Writings.com can provide
+                    the
+                    most sensible solution. We offer high quality custom writing that is produced by the best
+                    professional
+                    writers in the online writing industry.
+
+                    We take pride in offering better products and services than our competition. These services tend to
+                    be
+                    overpriced and provide their customers with low quality or plagiarized work. The majority of them
+                    are
+                    stationed in third world countries and do not hire highly qualified writers, as Great-Writings.com
+                    does.
+                    In fact, many of them simply download essays from free essay sample sites and sell these papers as
+                    originals. Students that use them can get into big trouble and may even be expelled from their
+                    universities! These companies should be avoided at all costs.</p>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <a class="btn pink-btn" href="#">Read more info</a>
+                    <a class="btn blue-btn" href="#">Odrer custom paper</a>
+                </div>
+            </div>
+        </div>
+
+        <aside>
+            <div class="container">
+                <div class="d-none d-xl-block">
+                    <div class="row banner justify-content-xl-center align-items-center">
+                        <span>Place for banner</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+    </section>
+
+    <section>
+        <div class="container our-services">
+            <div class="linear-title">Our services</div>
+
+            <div class="row">
+                <div class="col">
+                    During his or her years at university, the average student is challenged with writing large numbers
+                    of
+                    essays each semester. Since they have lives outside of school, most students find themselves short
+                    of time and
+                    energy, and simply are not able to write every required paper.
+                </div>
+            </div>
+
+            <div class="row service-cards">
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="card book-reports text-center">
+                        <div class="card-body">
+                            <h3 class="card-title">Book Reports</h3>
+                            <p class="card-text">The Great-Writings.com professional writers can assist our customers
+                                with
+                                any type
+                                of book report, article and film critique or any written projects about the arts.</p>
+                        </div>
+                        <div class="card-body">
+                            <a class="btn white-btn" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="card resume-writing text-center">
+                        <div class="card-body">
+                            <h3 class="card-title">Resume Writing</h3>
+                            <p class="card-text">We have professional resume writers that know how to create outstanding
+                                resumes. Our
+                                writers are skilled in helping customers shine by bringing out their best qualities.</p>
+                        </div>
+                        <div class="card-body">
+                            <a class="btn white-btn" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-8 offset-md-2 offset-lg-2 offset-xl-0 col-xl-4">
+                    <div class="card case-studies text-center">
+                        <div class="card-body">
+                            <h3 class="card-title">Case Studies</h3>
+                            <p class="card-text">Our writers know how to write excellent case studies in any academic
+                                discipline. We
+                                assigned a qualified professional writer to review each case.</p>
+                        </div>
+                        <div class="card-body">
+                            <a class="btn white-btn" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    Great-Writings.com offers customers an easy-to-access online writing service that allows them to buy
+                    term
+                    papers and other custom writing at affordable prices. Our exclusive writing services are well known
+                    for
+                    their
+                    cost effectiveness, efficiency and high quality. More students use the services of
+                    Great-Writings.com to
+                    buy
+                    term papers and other academic writing than from any other online writing venue. Students often
+                    count on
+                    Great-Writings.com to buy an essay and help them raise their grades higher and to fulfill all of
+                    their
+                    academic
+                    writing requirements.
+                    A professional writer is assigned to every student that becomes a customer of Great-Writings.com.
+                    Our
+                    writers
+                    can handle any academic writing project and do so in a way that accommodates any customer’s requests
+                    for
+                    customization. They know how to follow our customers’ detailed instructions in ways that result in
+                    exactly what
+                    the customer wants. If the customer requests changes, our writers will provide them free of charge.
+                    We not only provide our customers with academic writing services, we also offer business and
+                    personal
+                    writing
+                    services. If it has anything to do with writing, our writers can do an excellent job of providing
+                    exactly
+                    what
+                    our customers require.
+                    Every Great-Writings.com writer is a native English speaker. We require our writers to master
+                    writing the
+                    English language. Our well-trained writers are competent in writing anything that our customers may
+                    need,
+                    about
+                    any topic.
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="linear-title">Interesting services</div>
+
+            <div class="services-cards">
+                <div class="row">
+                    <div class="col">
+                        <div class="customer">
+                            <div class="icon-block">
+                                <h5>Customer support</h5>
+                                <p>Our Customer Care Center open for our customers at all times.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="privacy">
+                            <div class="icon-block">
+                                <h5>Privacy and security</h5>
+                                <p>Absolute safety of every client is fully guaranteed.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="delivery">
+                            <div class="icon-block">
+                                <h5>Timely delivery</h5>
+                                <p>Even if you turn to us at the eleventh hour, you will receive your paper on time.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </section>
 </main>
 
 <footer>
     <section>
+        <div class="container-fluid menu d-none d-xl-block text-center">
+                <div class="container">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Order now</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">How it works</a></li>
+                        <li><a href="#">Guarantees</a></li>
+                        <li><a href="#">Why us</a></li>
+                        <li><a href="#">Discounts</a></li>
+                        <li><a href="#">Prices</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+        </div>
 
+        <div class="container-fluid information">
+            <div class="container">
+                <div class="row">
+                    <div class="col d-none d-xl-block about">
+                        <h3>About us</h3>
+                        <p>Donec sem urna, molestie non erat eget, pellentesque lacinia enim. Maecenas mollis turpis et risus blandit, sit amet laoreet nibh efficitur. Nam in nisi at lectus vestibulum rutrum. In at euismod tellus, eu efficitur lorem. </p>
+                    </div>
+                    <div class="col d-none d-lg-block letters">
+                        <h3>NewsLetter</h3>
+                        <p>Subscribe to our MailChimp newsletter and stay up to date with all events coming straight in your mailbox:</p>
+                        <form action="?" method="post" class="letter">
+                            <input type="text" name="" placeholder="Your e-mail address" class="input" />
+                            <button class="submit"></button>
+                        </form>
+                    </div>
+                    <div class="col d-none d-lg-block contacts">
+                        <h3>Contact us</h3>
+                        <p><i class="fa fa-map-marker" aria-hidden="true"></i> 57E11th St, New York, NY10003</p>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i> Tel +1(480)477-9127</p>
+                        <p><i class="fa fa-envelope" aria-hidden="true"></i> Email: Great-Writings@ade.com</p>
+                    </div>
+                    <div class="col d-none d-lg-block links">
+                        <h3>USEFUL LINKS</h3>
+                        <ul>
+                            <li>General Information For Users</li>
+                            <li>Interactive Fairy Tales</li>
+                            <li>Official Storybook Maker Website</li>
+                            <li>Everyday Mathematics LinksBasic</li>
+                            <li>Knowledge and Experience</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">© 2017. Great-Writings.com. All rights reserved</div>
+                </div>
+            </div>
+        </div>
     </section>
 </footer>
 
@@ -47,5 +451,17 @@
 </script>
 <!-- Конец -->
 
+<!-- Простая менюшка для бургера (работает при наведении курсором и когда его убрать с меню) -->
+<script>
+    $(document).ready(function () {
+        $('#menu').mouseenter(function () {
+            $('.mobile-menu').find('.hidden').addClass('show').removeClass('hidden');
+        });
+        $('.mobile-menu').mouseleave(function() {
+        $('.mobile-menu').find('.show').addClass('hidden').removeClass('show');
+        });
+    });
+</script>
+<!-- Конец -->
 </body>
 </html>

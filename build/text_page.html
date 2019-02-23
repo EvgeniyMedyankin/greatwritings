@@ -11,6 +11,8 @@
     <link rel="shortcut icon" href="./img/favicon.ico">
     <!-- Подключение полной версии Bootstrap 4.3.1 для проекта -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Подключение Font-Awesome -->
+    <link rel="stylesheet" href="./css/font-awesome/css/font-awesome.min.css">
     <!-- Подключение минифицированного CSS со стилями для всех страниц -->
     <link rel="stylesheet" href="./css/system.min.css">
     <!-- Подключение минифицированного CSS со стилями для текущей страницы -->
@@ -18,14 +20,150 @@
 </head>
 <body>
 <header>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row head align-items-center justify-content-between">
+                <div class="d-none d-xl-block col-xl-4 guarantees">
+                    <span>100% Authenticity Guarantee &nbsp; &nbsp; 100% Plagiarism Free</span>
+                </div>
 
+                <div class="col-3 col-sm-3 col-md-1 d-block d-xl-none">
+                    <i class="fa fa-bars" aria-hidden="true" id="menu"></i>
+                </div>
+
+                <div class="col-9 col-sm-9 col-md-6 col-xl-4 text-center">
+                    <img src="../img/logo.png" class="logo" alt="Logo">
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-5 col-xl-4 login text-right">
+                    <a href="#" class="btn pink-btn">LiveChat</a>
+                    <a href="#" class="btn blue-btn">Login</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+        <div class="row d-none d-xl-block">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Order Now</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">How It Works</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Guarantees</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Why Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Discounts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">FAQ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Prices</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Testimonials</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+            </li>
+        </ul>
+        </div>
+        </div>
+    </div>
+    <div class="mobile-menu">
+        <div class="hidden">
+        <ul class="tabs">
+            <li class="tab"><a href="#">About Us</a></li>
+            <li class="tab"><a href="#">Order Now</a></li>
+            <li class="tab"><a href="#">Services</a></li>
+            <li class="tab"><a href="#">How It Works</a></li>
+            <li class="tab"><a href="#">Guarantees</a></li>
+            <li class="tab"><a href="#">Why Us</a></li>
+            <li class="tab"><a href="#">Discounts</a></li>
+            <li class="tab"><a href="#">FAQ</a></li>
+            <li class="tab"><a href="#">Prices</a></li>
+            <li class="tab"><a href="#">Testimonials</a></li>
+            <li class="tab"><a href="#">Blog</a></li>
+            <li class="tab"><a href="#">Contact Us</a></li>
+        </ul>
+        </div>
+    </div>
 </header>
 
 
 
 <footer>
     <section>
+        <div class="container-fluid menu d-none d-xl-block text-center">
+                <div class="container">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Order now</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">How it works</a></li>
+                        <li><a href="#">Guarantees</a></li>
+                        <li><a href="#">Why us</a></li>
+                        <li><a href="#">Discounts</a></li>
+                        <li><a href="#">Prices</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+        </div>
 
+        <div class="container-fluid information">
+            <div class="container">
+                <div class="row">
+                    <div class="col d-none d-xl-block about">
+                        <h3>About us</h3>
+                        <p>Donec sem urna, molestie non erat eget, pellentesque lacinia enim. Maecenas mollis turpis et risus blandit, sit amet laoreet nibh efficitur. Nam in nisi at lectus vestibulum rutrum. In at euismod tellus, eu efficitur lorem. </p>
+                    </div>
+                    <div class="col d-none d-lg-block letters">
+                        <h3>NewsLetter</h3>
+                        <p>Subscribe to our MailChimp newsletter and stay up to date with all events coming straight in your mailbox:</p>
+                        <form action="?" method="post" class="letter">
+                            <input type="text" name="" placeholder="Your e-mail address" class="input" />
+                            <button class="submit"></button>
+                        </form>
+                    </div>
+                    <div class="col d-none d-lg-block contacts">
+                        <h3>Contact us</h3>
+                        <p><i class="fa fa-map-marker" aria-hidden="true"></i> 57E11th St, New York, NY10003</p>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i> Tel +1(480)477-9127</p>
+                        <p><i class="fa fa-envelope" aria-hidden="true"></i> Email: Great-Writings@ade.com</p>
+                    </div>
+                    <div class="col d-none d-lg-block links">
+                        <h3>USEFUL LINKS</h3>
+                        <ul>
+                            <li>General Information For Users</li>
+                            <li>Interactive Fairy Tales</li>
+                            <li>Official Storybook Maker Website</li>
+                            <li>Everyday Mathematics LinksBasic</li>
+                            <li>Knowledge and Experience</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">© 2017. Great-Writings.com. All rights reserved</div>
+                </div>
+            </div>
+        </div>
     </section>
 </footer>
 
@@ -43,5 +181,17 @@
 </script>
 <!-- Конец -->
 
+<!-- Простая менюшка для бургера (работает при наведении курсором и когда его убрать с меню) -->
+<script>
+    $(document).ready(function () {
+        $('#menu').mouseenter(function () {
+            $('.mobile-menu').find('.hidden').addClass('show').removeClass('hidden');
+        });
+        $('.mobile-menu').mouseleave(function() {
+        $('.mobile-menu').find('.show').addClass('hidden').removeClass('show');
+        });
+    });
+</script>
+<!-- Конец -->
 </body>
 </html>

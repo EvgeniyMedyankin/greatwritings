@@ -1,0 +1,121 @@
+
+footer {
+  .menu {
+    background: #30323a;
+    color: #fff;
+    padding: 15px 0 5px 0;
+    ul {
+      list-style: none;
+      li {
+        display: inline;
+        font-size: 0.9rem;
+        &:after {
+          content: ' | ';
+          margin: 0 7px;
+        }
+        &:last-child:after {
+          content: '';
+        }
+      }
+    }
+    a {
+      color: #fff;
+      &:hover {
+        text-decoration: none;
+        color: #8e97ee;
+      }
+    }
+  }
+  .information {
+    background-color: #0a1127;
+    color: #fff;
+    font-size: 13px;
+    padding-top: 20px;
+    h3 {
+      color: #ffffff;
+      font-family: 'Proxima Nova - Semibold';
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 24px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .container {
+      .row {
+        .col {
+          padding: 30px;
+        }
+      }
+    }
+    .letter {
+      width: 100%;
+      position: relative;
+      input {
+        border: none;
+      }
+      .input {
+        background: #0a1127;
+        width: 100%;
+        padding: 8px 37px 9px 15px;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        border-radius: 20px;
+        color: #fff;
+        outline: none;
+        font-size: 12px;
+        border: 1px solid #394050;
+        &:focus {
+          box-shadow: none;
+          background: #fff;
+          border: 1px solid #404c66;
+          color: #000;
+        }
+      }
+      .submit {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50px;
+        border-radius: 0 20px 20px 0;
+        background-color: #394050;
+        height: 37px;
+        cursor: pointer;
+        border: none;
+        &:hover {
+          opacity: 0.8;
+        }
+        &:before {
+          font-family: 'FontAwesome';
+          font-weight: 900;
+          content: '\f054';
+          width: 100%;
+          height: 20px;
+          color: #fff;
+        }
+      }
+    }
+    .contacts {
+      i {
+        color: #65b5eb;
+        margin-right: 5px;
+      }
+    }
+    .links {
+      ul {
+        list-style: none;
+        margin-left: -40px;
+        line-height: 25px;
+        li {
+          &:before {
+            font-family: 'FontAwesome';
+            font-weight: 900;
+            content: '\f0da';
+            height: 18px;
+            color: #8e97ee;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}

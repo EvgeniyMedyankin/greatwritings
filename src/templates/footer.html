@@ -1,6 +1,61 @@
 <footer>
     <section>
+        <div class="container-fluid menu d-none d-xl-block text-center">
+                <div class="container">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Order now</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">How it works</a></li>
+                        <li><a href="#">Guarantees</a></li>
+                        <li><a href="#">Why us</a></li>
+                        <li><a href="#">Discounts</a></li>
+                        <li><a href="#">Prices</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+        </div>
 
+        <div class="container-fluid information">
+            <div class="container">
+                <div class="row">
+                    <div class="col d-none d-xl-block about">
+                        <h3>About us</h3>
+                        <p>Donec sem urna, molestie non erat eget, pellentesque lacinia enim. Maecenas mollis turpis et risus blandit, sit amet laoreet nibh efficitur. Nam in nisi at lectus vestibulum rutrum. In at euismod tellus, eu efficitur lorem. </p>
+                    </div>
+                    <div class="col d-none d-lg-block letters">
+                        <h3>NewsLetter</h3>
+                        <p>Subscribe to our MailChimp newsletter and stay up to date with all events coming straight in your mailbox:</p>
+                        <form action="?" method="post" class="letter">
+                            <input type="text" name="" placeholder="Your e-mail address" class="input" />
+                            <button class="submit"></button>
+                        </form>
+                    </div>
+                    <div class="col d-none d-lg-block contacts">
+                        <h3>Contact us</h3>
+                        <p><i class="fa fa-map-marker" aria-hidden="true"></i> 57E11th St, New York, NY10003</p>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i> Tel +1(480)477-9127</p>
+                        <p><i class="fa fa-envelope" aria-hidden="true"></i> Email: Great-Writings@ade.com</p>
+                    </div>
+                    <div class="col d-none d-lg-block links">
+                        <h3>USEFUL LINKS</h3>
+                        <ul>
+                            <li>General Information For Users</li>
+                            <li>Interactive Fairy Tales</li>
+                            <li>Official Storybook Maker Website</li>
+                            <li>Everyday Mathematics LinksBasic</li>
+                            <li>Knowledge and Experience</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">© 2017. Great-Writings.com. All rights reserved</div>
+                </div>
+            </div>
+        </div>
     </section>
 </footer>
 
@@ -18,5 +73,17 @@
 </script>
 <!-- Конец -->
 
+<!-- Простая менюшка для бургера (работает при наведении курсором и когда его убрать с меню) -->
+<script>
+    $(document).ready(function () {
+        $('#menu').mouseenter(function () {
+            $('.mobile-menu').find('.hidden').addClass('show').removeClass('hidden');
+        });
+        $('.mobile-menu').mouseleave(function() {
+        $('.mobile-menu').find('.show').addClass('hidden').removeClass('show');
+        });
+    });
+</script>
+<!-- Конец -->
 </body>
 </html>
