@@ -111,5 +111,24 @@ header {
       }
     }
   }
-
+  .kyberpulse {
+    animation: kyberpulse  4s infinite;
+    @keyframes kyberpulse {
+      from {
+        transform: rotateY(40deg);
+        transition: 1s;
+      }
+      50% {
+        transform: rotateY(-10deg);
+        transition: 3s;
+      }
+      to {
+        transform: rotateY(40deg);
+        transition: 1s;
+      }
+    }
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
 }

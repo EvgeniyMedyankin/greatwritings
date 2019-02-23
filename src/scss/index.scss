@@ -42,18 +42,17 @@ padding: 30px;
     }
     @media screen and (min-width: 768px) {
       padding: 45px 0;
-      height: 550px;
-      margin-bottom: 30px;
+      height: 450px;
+      margin-bottom: 90px;
     }
     @media screen and (min-width: 992px) {
       padding: 25px 0;
-      height: 520px;
-      margin-bottom: 30px;
+      height: 420px;
+      margin-bottom: 100px;
     }
     @media screen and (min-width: 1200px) {
-      height: 680px;
+      height: 620px;
     }
-    // ===================================
     // ===================================
     // ===================================
 
@@ -143,7 +142,7 @@ padding: 30px;
   .our-services {
     color: #19152d;
     font-family: 'Proxima Nova';
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 300;
   }
 
@@ -359,7 +358,7 @@ padding: 30px;
     }
     .card {
       max-width: 550px;
-      margin: 20px 10px;
+      margin: 15px 0;
       color: #fff;
       border: none;
       .card-text {
@@ -372,7 +371,7 @@ padding: 30px;
       }
       .card-body {
         h3 {
-          font-size: 32px;
+          font-size: 33px;
         }
         a {
           &:hover {
