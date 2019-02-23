@@ -3,16 +3,16 @@ main {
     background-image: url(../img/bg.svg);
     background-repeat: no-repeat;
     height: 700px;
-padding: 30px;
+    padding: 30px;
+
     .title {
       padding: 15px;
       color: #19152d;
       font-family: "Proxima Nova";
       font-size: 28px;
       font-weight: 400;
-      //max-width: 550px;
-      //height: 148px;
       text-align: center;
+
       span {
         color: #5378e8;
         font-size: 46px;
@@ -21,6 +21,7 @@ padding: 30px;
           font-size: 30px;
         }
       }
+
       @media screen and (max-width: 767px) {
         padding: 15px;
         font-size: 20px;
@@ -57,9 +58,10 @@ padding: 30px;
     // ===================================
 
     .calculator {
-     background-color: #fff;
+      background-color: #fff;
       height: 460px;
       padding: 20px 30px;
+
       form {
         span {
           display: block;
@@ -70,11 +72,14 @@ padding: 30px;
           margin-bottom: 20px;
           text-align: center;
         }
+
         .form-group {
           margin-bottom: 0.5rem;
+
           label {
             margin-left: 10px;
           }
+
           select {
             border: 1px solid #56a7dd;
             border-radius: 20px;
@@ -82,6 +87,7 @@ padding: 30px;
           }
         }
       }
+
       @media (min-width: 1200px) {
         margin: 0 50px;
       }
@@ -146,14 +152,15 @@ padding: 30px;
     font-weight: 300;
   }
 
-
   .steps {
     .first {
       .card {
         min-height: 225px;
         padding: 20px;
+
         .img {
           background: url(../img/Forma_1.svg) no-repeat 40% 40px;
+
           &:before {
             content: "";
             position: absolute;
@@ -166,6 +173,7 @@ padding: 30px;
             opacity: 0.2;
           }
         }
+
         @media (max-width: 767px) {
           min-height: 300px;
           background: url(../img/Forma_1.svg) no-repeat 50% 35px;
@@ -181,14 +189,17 @@ padding: 30px;
             opacity: 0.2;
           }
         }
+
         .card-body {
           p {
             font-size: 14px;
           }
+
           @media (max-width: 767px) {
             margin-top: 170px;
           }
         }
+
         &:hover {
           transform: rotate(-5deg) scale(1.04);
           filter: grayscale(100%);
@@ -196,12 +207,15 @@ padding: 30px;
         }
       }
     }
+
     .second {
       .card {
         min-height: 225px;
         padding: 20px;
+
         .img {
           background: url(../img/Forma_2.svg) no-repeat 40% 40px;
+
           &:before {
             content: "";
             position: absolute;
@@ -214,6 +228,7 @@ padding: 30px;
             opacity: 0.2;
           }
         }
+
         @media (max-width: 767px) {
           min-height: 300px;
           background: url(../img/Forma_2.svg) no-repeat 50% 35px;
@@ -229,14 +244,17 @@ padding: 30px;
             opacity: 0.2;
           }
         }
+
         .card-body {
           p {
             font-size: 14px;
           }
+
           @media (max-width: 767px) {
             margin-top: 170px;
           }
         }
+
         &:hover {
           transform: rotate(5deg) scale(1.04);
           filter: grayscale(100%);
@@ -244,12 +262,15 @@ padding: 30px;
         }
       }
     }
+
     .third {
       .card {
         min-height: 225px;
         padding: 20px;
+
         .img {
           background: url(../img/Forma_3.svg) no-repeat 40% 40px;
+
           &:before {
             content: "";
             position: absolute;
@@ -262,6 +283,7 @@ padding: 30px;
             opacity: 0.2;
           }
         }
+
         @media (max-width: 767px) {
           min-height: 300px;
           background: url(../img/Forma_3.svg) no-repeat 50% 35px;
@@ -277,14 +299,17 @@ padding: 30px;
             opacity: 0.2;
           }
         }
+
         .card-body {
           p {
             font-size: 14px;
           }
+
           @media (max-width: 767px) {
             margin-top: 170px;
           }
         }
+
         &:hover {
           transform: rotate(5deg) scale(1.04);
           filter: grayscale(100%);
@@ -292,12 +317,15 @@ padding: 30px;
         }
       }
     }
+
     .fourth {
       .card {
         min-height: 225px;
         padding: 20px;
+
         .img {
           background: url(../img/Forma_4.svg) no-repeat 40% 40px;
+
           &:before {
             content: "";
             position: absolute;
@@ -310,6 +338,7 @@ padding: 30px;
             opacity: 0.2;
           }
         }
+
         @media (max-width: 767px) {
           min-height: 300px;
           background: url(../img/Forma_4.svg) no-repeat 50% 35px;
@@ -325,14 +354,17 @@ padding: 30px;
             opacity: 0.2;
           }
         }
+
         .card-body {
           p {
             font-size: 14px;
           }
+
           @media (max-width: 767px) {
             margin-top: 170px;
           }
         }
+
         &:hover {
           transform: rotate(-5deg) scale(1.04);
           filter: grayscale(100%);
@@ -341,6 +373,7 @@ padding: 30px;
       }
     }
   }
+
   .service-cards {
     .book-reports {
       box-shadow: 4px 2px 8px rgba(185, 185, 185, 0.75);
@@ -356,23 +389,28 @@ padding: 30px;
       box-shadow: 4px 2px 8px rgba(185, 185, 185, 0.75);
       background-image: linear-gradient(to top, #5075e7 0%, #8cadf4 100%);
     }
+
     .card {
       max-width: 550px;
       margin: 15px 0;
       color: #fff;
       border: none;
+
       .card-text {
         min-height: 160px;
         font-size: 18px;
         margin-top: 40px;
       }
+
       &:hover {
         transform: scale(1.05);
       }
+
       .card-body {
         h3 {
           font-size: 33px;
         }
+
         a {
           &:hover {
             transform: rotateY(360deg);

@@ -111,8 +111,9 @@ header {
       }
     }
   }
+
   .kyberpulse {
-    animation: kyberpulse  4s infinite;
+    animation: kyberpulse 4s infinite;
     @keyframes kyberpulse {
       from {
         transform: rotateY(40deg);
@@ -127,6 +128,7 @@ header {
         transition: 1s;
       }
     }
+
     &:hover {
       animation-play-state: paused;
     }

@@ -3,20 +3,24 @@
   margin: 5px;
   border-radius: 20px;
 }
+
 .pink-btn {
   border: 2px solid #fff;
   background-image: linear-gradient(to top, #9219d7 0%, #c16ef0 100%);
   color: #fff;
+
   &:hover {
     color: #ba64eb;
     background-image: none;
     border: 2px solid #ba64eb;
   }
 }
+
 .blue-btn {
   border: 2px solid #fff;
   background-image: linear-gradient(to top, #5075e7 0%, #8cadf4 100%);
   color: #fff;
+
   &:hover {
     color: #6083ea;
     background-image: none;
@@ -28,6 +32,7 @@
   border: 2px solid #fff;
   background-color: transparent;
   color: #fff;
+
   &:hover {
     color: #fff;
     background-color: transparent;
