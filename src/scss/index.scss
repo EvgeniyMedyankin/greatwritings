@@ -3,9 +3,89 @@ main {
     background-image: url(../img/bg.svg);
     background-repeat: no-repeat;
     height: 700px;
+padding: 30px;
+    .title {
+      padding: 15px;
+      color: #19152d;
+      font-family: "Proxima Nova";
+      font-size: 28px;
+      font-weight: 400;
+      //max-width: 550px;
+      //height: 148px;
+      text-align: center;
+      span {
+        color: #5378e8;
+        font-size: 46px;
+        text-transform: uppercase;
+        @media screen and (max-width: 767px) {
+          font-size: 30px;
+        }
+      }
+      @media screen and (max-width: 767px) {
+        padding: 15px;
+        font-size: 20px;
+      }
+    }
 
-    @media screen and (max-width: 992px) {
-      height: 640px;
+    // ===================================
+    // Фикс для красивого позиционирования
+    // ===================================
+    @media screen and (max-width: 576px) {
+      padding: 5px 0;
+      height: 630px;
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 576px) {
+      padding: 5px 0;
+      height: 630px;
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 768px) {
+      padding: 45px 0;
+      height: 550px;
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 992px) {
+      padding: 25px 0;
+      height: 520px;
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      height: 680px;
+    }
+    // ===================================
+    // ===================================
+    // ===================================
+
+    .calculator {
+     background-color: #fff;
+      height: 460px;
+      padding: 20px 30px;
+      form {
+        span {
+          display: block;
+          color: #9824da;
+          font-family: "Proxima Nova";
+          font-size: 30px;
+          font-weight: 400;
+          margin-bottom: 20px;
+          text-align: center;
+        }
+        .form-group {
+          margin-bottom: 0.5rem;
+          label {
+            margin-left: 10px;
+          }
+          select {
+            border: 1px solid #56a7dd;
+            border-radius: 20px;
+            color: #000;
+          }
+        }
+      }
+      @media (min-width: 1200px) {
+        margin: 0 50px;
+      }
     }
   }
 
@@ -61,12 +141,12 @@ main {
   }
 
   .our-services {
-
+    color: #19152d;
+    font-family: 'Proxima Nova';
+    font-size: 20px;
+    font-weight: 300;
   }
 
-  .services-cards {
-
-  }
 
   .steps {
     .first {
