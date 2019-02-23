@@ -100,6 +100,7 @@ main {
     font-size: 20px;
     font-weight: 300;
     margin: 30px 0;
+    padding: 15px;
   }
 
   .banner {
@@ -201,7 +202,7 @@ main {
         }
 
         &:hover {
-          transform: rotate(-5deg) scale(1.04);
+          transform: rotate(-1deg) scale(1.04);
           filter: grayscale(100%);
           z-index: 2;
         }
@@ -256,7 +257,7 @@ main {
         }
 
         &:hover {
-          transform: rotate(5deg) scale(1.04);
+          transform: rotate(1deg) scale(1.04);
           filter: grayscale(100%);
           z-index: 2;
         }
@@ -311,7 +312,7 @@ main {
         }
 
         &:hover {
-          transform: rotate(5deg) scale(1.04);
+          transform: rotate(1deg) scale(1.04);
           filter: grayscale(100%);
           z-index: 2;
         }
@@ -366,7 +367,7 @@ main {
         }
 
         &:hover {
-          transform: rotate(-5deg) scale(1.04);
+          transform: rotate(-1deg) scale(1.04);
           filter: grayscale(100%);
           z-index: 2;
         }
@@ -418,6 +419,133 @@ main {
           }
         }
       }
+    }
+  }
+
+  .interesting-services-cards {
+    position: relative;
+    height: 260px;
+
+    .customer {
+      height: 260px;
+      background: url(../img/customer.svg) no-repeat 50% 0;
+      position: absolute;
+
+      .icon-block {
+        height: 151px;
+        box-shadow: 2px 4px 8px rgba(185, 185, 185, 0.75);
+        background-color: #ffffff;
+        margin-top: 60px;
+        position: relative;
+        z-index: -1;
+        padding: 35px 15px 15px 15px;
+
+        h5 {
+          font-family: "Proxima Nova";
+          font-weight: 600;
+          line-height: 5px;
+          text-align: center;
+          margin-top: 20px;
+        }
+
+        p {
+          font-family: "Proxima Nova";
+          font-weight: 300;
+          line-height: 20px;
+          text-align: center;
+          padding: 5px 25px 15px 25px;
+        }
+      }
+
+      @media (max-width: 992px) {
+        width: 94%;
+        margin-top: 0;
+      }
+    }
+
+    .privacy {
+      height: 260px;
+      position: absolute;
+      background: url(../img/privacy.svg) no-repeat 50% 0;
+
+      .icon-block {
+        height: 151px;
+        box-shadow: 2px 4px 8px rgba(185, 185, 185, 0.75);
+        background-color: #ffffff;
+        margin-top: 60px;
+        position: relative;
+        z-index: -1;
+        padding: 35px 15px 15px 15px;
+
+        h5 {
+          font-family: "Proxima Nova";
+          font-weight: 600;
+          line-height: 5px;
+          text-align: center;
+          margin-top: 20px;
+        }
+
+        p {
+          font-family: "Proxima Nova";
+          font-weight: 300;
+          line-height: 20px;
+          text-align: center;
+          padding: 5px 25px 15px 25px;
+        }
+      }
+
+      @media (max-width: 992px) {
+        width: 94%;
+        margin-top: 250px;
+      }
+    }
+
+    .delivery {
+      height: 260px;
+      position: absolute;
+      background: url(../img/delivery.svg) no-repeat 50% 0;
+
+      .icon-block {
+        height: 151px;
+        box-shadow: 2px 4px 8px rgba(185, 185, 185, 0.75);
+        background-color: #ffffff;
+        margin-top: 60px;
+        position: relative;
+        z-index: -1;
+        padding: 35px 15px 15px 15px;
+
+        h5 {
+          font-family: "Proxima Nova";
+          font-weight: 600;
+          line-height: 5px;
+          text-align: center;
+          margin-top: 20px;
+        }
+
+        p {
+          font-family: "Proxima Nova";
+          font-weight: 300;
+          line-height: 20px;
+          text-align: center;
+          padding: 5px 25px 15px 25px;
+        }
+      }
+
+      @media (max-width: 992px) {
+        width: 94%;
+        margin-top: 500px;
+      }
+    }
+
+    .row .col {
+      @media (max-width: 992px) {
+        float: none;
+        padding: 0;
+      }
+    }
+
+    @media (max-width: 992px) {
+      height: 750px;
     }
   }
 }

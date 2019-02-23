@@ -116,16 +116,10 @@ header {
     animation: kyberpulse 4s infinite;
     @keyframes kyberpulse {
       from {
-        transform: rotateY(40deg);
-        transition: 1s;
-      }
-      50% {
-        transform: rotateY(-10deg);
-        transition: 3s;
+        box-shadow: 1px 1px 20px 10px rgba(185, 185, 185, 1);
       }
       to {
-        transform: rotateY(40deg);
-        transition: 1s;
+        box-shadow: none;
       }
     }
 
