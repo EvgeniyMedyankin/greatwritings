@@ -1,7 +1,6 @@
 main {
   .bg-image {
-    background-image: url(../img/bg.svg);
-    background-repeat: no-repeat;
+    background: url(../img/bg.svg) no-repeat;
     height: 700px;
     padding: 30px;
 
@@ -146,6 +145,94 @@ main {
     }
   }
 
+
+  .choose-us {
+    min-height: 530px;
+    width: 100%;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    background: rgba(140, 173, 244, 1);
+    background: -moz-linear-gradient(left, rgba(140, 173, 244, 1) 0%, rgba(80, 118, 231, 1) 50%, rgba(245, 245, 245, 1) 50%, rgba(245, 245, 245, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(140, 173, 244, 1)), color-stop(50%, rgba(80, 118, 231, 1)), color-stop(50%, rgba(245, 245, 245, 1)), color-stop(100%, rgba(245, 245, 245, 1)));
+    background: -webkit-linear-gradient(left, rgba(140, 173, 244, 1) 0%, rgba(80, 118, 231, 1) 50%, rgba(245, 245, 245, 1) 50%, rgba(245, 245, 245, 1) 100%);
+    background: -o-linear-gradient(left, rgba(140, 173, 244, 1) 0%, rgba(80, 118, 231, 1) 50%, rgba(245, 245, 245, 1) 50%, rgba(245, 245, 245, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(140, 173, 244, 1) 0%, rgba(80, 118, 231, 1) 50%, rgba(245, 245, 245, 1) 50%, rgba(245, 245, 245, 1) 100%);
+    background: linear-gradient(to right, rgba(140, 173, 244, 1) 0%, rgba(80, 118, 231, 1) 50%, rgba(245, 245, 245, 1) 50%, rgba(245, 245, 245, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8cadf4', endColorstr='#f5f5f5', GradientType=1);
+
+    .why {
+      min-height: 530px;
+      color: #fff;
+      background: url(../img/star.svg) no-repeat 50% 40%;
+      padding-top: 10%;
+      padding-right: 7%;
+
+      h2 {
+        color: #fff;
+        font-family: "Proxima Nova";
+        font-size: 47px;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+
+      p {
+        color: #fff;
+        font-family: "Proxima Nova";
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 33px;
+      }
+
+      @media (max-width: 1200px) {
+        h2 {
+          text-align: center;
+        }
+        background-color: #8cadf4;
+        background-color: -moz-linear-gradient(left, #8cadf4 0%, #5076e7 100%);
+        background-color: -webkit-linear-gradient(left, #8cadf4 0%, #5076e7 100%);
+        background-color: linear-gradient(to right, #8cadf4 0%, #5076e7 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8cadf4', endColorstr='#5076e7', GradientType=1);
+        background: url(../img/star.svg) no-repeat 50% 50%;
+        padding: 17% 10%;
+      }
+    }
+
+    .list {
+      min-height: 530px;
+      background-color: #f5f5f5;
+
+      ol {
+        padding-top: 10%;
+        list-style: none;
+        @media (max-width: 1200px) {
+          margin-left: -30px;
+        }
+
+        li {
+          color: #19152d;
+          font-family: "Proxima Nova";
+          font-size: 17px;
+          font-weight: 400;
+          padding-left: 20px;
+          margin: 10px;
+
+          &:before {
+            font-family: "FontAwesome";
+            content: '\f00c';
+            color: #5b80e9;
+            line-height: 10px;
+            padding-right: 15px;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 1200px) {
+      background: none;
+    }
+  }
+
+
   .our-services {
     color: #19152d;
     font-family: 'Proxima Nova';
@@ -160,7 +247,7 @@ main {
         padding: 20px;
 
         .img {
-          background: url(../img/Forma_1.svg) no-repeat 40% 40px;
+          background: url(../img/Forma_1.svg) no-repeat 40% 35px;
 
           &:before {
             content: "";
@@ -215,7 +302,7 @@ main {
         padding: 20px;
 
         .img {
-          background: url(../img/Forma_2.svg) no-repeat 40% 40px;
+          background: url(../img/Forma_2.svg) no-repeat 40% 35px;
 
           &:before {
             content: "";
@@ -270,7 +357,7 @@ main {
         padding: 20px;
 
         .img {
-          background: url(../img/Forma_3.svg) no-repeat 40% 40px;
+          background: url(../img/Forma_3.svg) no-repeat 40% 35px;
 
           &:before {
             content: "";
@@ -325,7 +412,7 @@ main {
         padding: 20px;
 
         .img {
-          background: url(../img/Forma_4.svg) no-repeat 40% 40px;
+          background: url(../img/Forma_4.svg) no-repeat 40% 35px;
 
           &:before {
             content: "";
@@ -534,13 +621,6 @@ main {
       @media (max-width: 992px) {
         width: 94%;
         margin-top: 500px;
-      }
-    }
-
-    .row .col {
-      @media (max-width: 992px) {
-        float: none;
-        padding: 0;
       }
     }
 

@@ -122,8 +122,8 @@
                             <form>
                                 <span>Get a price quote</span>
                                 <div class="form-group">
-                                    <label for="formGroupExampleInput">Type of your assignment</label>
-                                    <select class="custom-select" id="formGroupExampleInput">
+                                    <label for="Input">Type of your assignment</label>
+                                    <select class="custom-select" id="Input">
                                         <option selected value="0">Essay</option>
                                         <option value="1">Essay 1</option>
                                         <option value="2">Essay 2</option>
@@ -131,8 +131,8 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label for="formGroupExampleInput2">Urgency</label>
-                                    <select class="custom-select" id="formGroupExampleInput2">
+                                    <label for="Input2">Urgency</label>
+                                    <select class="custom-select" id="Input2">
                                         <option selected value="11">11 days</option>
                                         <option value="14">14 days</option>
                                         <option value="21">21 day</option>
@@ -140,8 +140,8 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label for="formGroupExampleInput3">Writer level</label>
-                                    <select class="custom-select" id="formGroupExampleInput3">
+                                    <label for="Input3">Writer level</label>
+                                    <select class="custom-select" id="Input3">
                                         <option selected value="High School">High School</option>
                                         <option value="Easy">Easy</option>
                                         <option value="Medium">Medium</option>
@@ -149,15 +149,17 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label for="formGroupExampleInput4">Pages</label>
-                                    <select class="custom-select" id="formGroupExampleInput4">
+                                    <label for="Input4">Pages</label>
+                                    <select class="custom-select" id="Input4">
                                         <option value="1">1</option>
                                         <option selected value="2">2</option>
                                         <option value="3">3</option>
                                         <option value="4">4</option>
                                     </select>
                                 </div>
-                                <button class="btn blue-btn" type="submit">Odrer custom paper</button>
+                                <div class="text-center">
+                                    <button class="btn blue-btn" type="submit">Odrer custom paper</button>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -257,6 +259,41 @@
                 </div>
             </div>
         </div>
+
+        <div class="choose-us">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-xl-6 why">
+                        <h2>WHY CHOOSE US?</h2>
+                        <p>One of the characteristics that set Great-Writings.com apart from other online writing
+                            services is our high level of professionalism.
+                            We are proud to be able to offer fast delivery of our outstanding writing at affordable
+                            rates that virtually any student can afford.
+                            Every paper is a well-written, well researched masterpiece of academic writing.</p>
+                    </div>
+                    <div class="col-12 col-md-12 col-xl-6 list">
+                        <ol>
+                            <li>We can provide any type of academic writing assistance you may require – from standard
+                                essays to Ph.D. dissertations. Our priority is to help you!
+                            </li>
+                            <li>Our writers are highly qualified and entirely professional with excellent experience and
+                                a constant desire to meet your needs!
+                            </li>
+                            <li>We only provide papers that are original, free of plagiarism and delivered on time.
+                                Additionally, you are entitled to ask for a free revision.
+                            </li>
+                            <li>There is the whole team, ready to assist you 24x7. Do not hesitate to contact us and all
+                                your queries will be dealt with promptly.
+                            </li>
+                            <li>We check every work for plagiarism, making sure it is written from scratch, providing
+                                excellent service for every client!
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <aside>
             <div class="container">
                 <div class="d-none d-xl-block">
@@ -449,10 +486,32 @@
     </section>
 </footer>
 
+<div class="d-flex fixed">
+    <div class="dropdown  dropup mr-1">
+        <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+            Страницы сайта
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+            <a class="dropdown-item" href="index.html">Главная сайта</a>
+            <a class="dropdown-item" href="404.html">Страница 404</a>
+            <a class="dropdown-item" href="blog.html">Главная блог</a>
+            <a class="dropdown-item" href="my_orders.html">Мои заказы</a>
+            <a class="dropdown-item" href="order_details.html">Детали заказа</a>
+            <a class="dropdown-item" href="order_form.html">Форма заказа</a>
+            <a class="dropdown-item" href="text_page.html">Статья блога</a>
+        </div>
+    </div>
+</div>
+
 <!-- Подключение JavaScript файлов -->
 <script src="./js/jquery-3.3.1.slim.min.js"></script>
 <!-- jQuery тогда вызов Bootstrap JS 4.3.1 -->
 <script src="./js/bootstrap.min.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+
+<script>
+    $('.dropdown-toggle').dropdown();
+</script>
 
 <!-- Собственный простенький Г... код :) для динамического подключения CSS файлов согласно странице -->
 <script>
