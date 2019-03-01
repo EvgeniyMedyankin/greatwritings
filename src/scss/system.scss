@@ -7,6 +7,35 @@ body {
   color: #000;
 }
 
+.pagination {
+  .page-item {
+    a {
+      margin: 5px;
+      background-color: #fff;
+      box-shadow: 0 5px 5px rgba(164, 164, 164, 0.75);
+      border: 1px solid #dadada;
+      border-radius: 10px;
+      font-family: "Proxima Nova";
+      font-size: 18px;
+      font-weight: 400;
+      color: #535353;
+      &:hover {
+        transition: .5s;
+        transform: scale(1.1);
+        color: #6083ea;
+      }
+    }
+  }
+
+  .page-link {
+    &:last-child {
+      border-radius: 10px;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+  }
+}
+
 @import '_components.scss';
 @import '_head.scss';
 @import '_footer.scss';

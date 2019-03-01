@@ -205,7 +205,7 @@ main {
         padding-top: 10%;
         list-style: none;
         @media (max-width: 1200px) {
-          margin-left: -30px;
+          padding-inline-start: 0px;
         }
 
         li {

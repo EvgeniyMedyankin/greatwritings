@@ -1,0 +1,217 @@
+.main-title {
+  color: #2c3248;
+  font-family: "Proxima Nova - Semibold";
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding: 40px 10px 20px 10px;
+}
+
+.blog {
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+    .col {
+      padding: 0;
+    }
+  }
+  .post {
+    background-color: #fff;
+    h2 {
+      padding: 25px 25px 0 25px;
+      color: #2c3248;
+      font-family: "Proxima Nova";
+      font-size: 32px;
+      font-weight: 400;
+    }
+    .info {
+      padding: 10px 25px;
+      color: #2c3248;
+      font-family: "Proxima Nova";
+      font-size: 16px;
+      font-weight: 400;
+      .date {
+        &:before {
+          font-family: "FontAwesome";
+          content: '\f073';
+          padding-right: 10px;
+        }
+      }
+      .comments {
+        margin: 0px 20px;
+        &:before {
+          font-family: "FontAwesome";
+          content: '\f27b';
+          padding-right: 10px;
+        }
+      }
+      .share {
+        &:before {
+          font-family: "FontAwesome";
+          content: '\f1e0';
+          padding-right: 10px;
+        }
+      }
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+    .tags {
+    padding: 20px 25px 10px 25px;
+    }
+    p {
+      padding: 5px 25px;
+      color: #2c3248;
+      font-family: "Proxima Nova";
+      font-size: 17px;
+      font-weight: 400;
+    }
+  }
+}
+.sidebar {
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .choose {
+    padding: 25px 15px;
+    h3 {
+      color: #5175e7;
+      font-family: "Proxima Nova";
+      font-size: 32px;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    ol {
+      list-style: none;
+      padding-inline-start: 0px;
+
+      li {
+        color: #19152d;
+        font-family: "Proxima Nova";
+        font-size: 16px;
+        font-weight: 400;
+        margin: 10px;
+        span {
+          display: block;
+          margin-left: 30px;
+          margin-top: -25px;
+      }
+        &:before {
+          font-family: "FontAwesome";
+          content: '\f00c';
+          color: #5b80e9;
+          line-height: 10px;
+          padding-right: 25px;
+        }
+      }
+    }
+  }
+
+  .discounts {
+    padding: 25px 15px;
+    h3 {
+      color: #5175e7;
+      font-family: "Proxima Nova";
+      font-size: 32px;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      font-family: "Proxima Nova";
+      font-size: 20px;
+    }
+    .discount {
+      color: #2c3248;
+      font-family: "Proxima Nova";
+      font-size: 18px;
+      font-weight: 400;
+      margin-left: 70px;
+      line-height: 25px;
+      margin-top: 20px;
+    }
+    .red {
+      span {
+        color: #ff4475;
+        font-family: "Proxima Nova - Semibold";
+        font-size: 48px;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+      &:before {
+        position: relative;
+        top: 35px;
+        right: 35px;
+        font-family: "FontAwesome";
+        content: '\f054';
+        font-size: 40px;
+        color: #ff4475;
+        line-height: 10px;
+        padding-right: 25px;
+        display: block;
+      }
+    }
+    .violet {
+      span {
+        color: #b85dec;
+        font-family: "Proxima Nova - Semibold";
+        font-size: 48px;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+      &:before {
+        position: relative;
+        top: 35px;
+        right: 35px;
+        font-family: "FontAwesome";
+        content: '\f054';
+        font-size: 40px;
+        color: #b85dec;
+        line-height: 10px;
+        padding-right: 25px;
+        display: block;
+      }
+    }
+  }
+
+  .posts {
+    padding: 25px 15px;
+    h3 {
+      color: #5175e7;
+      font-family: "Proxima Nova";
+      font-size: 32px;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    .post {
+      padding: 0 15px;
+      margin-top: 15px;
+      a {
+        color: #2c3248;
+        font-family: "Proxima Nova";
+        font-size: 16px;
+        font-weight: 400;
+        text-decoration: none;
+        &:hover {
+          color: #5175e7;
+        }
+      }
+      span {
+        display: block;
+        color: #2c3248;
+        font-family: "Proxima Nova";
+        font-size: 17px;
+        font-weight: 400;
+      }
+    }
+  }
+}
