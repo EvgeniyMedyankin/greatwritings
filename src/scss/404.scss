@@ -1,23 +1,29 @@
-.text-404 {
-  background: url(../img/404.png) 50% 35%;
+.error {
+  background: url(../img/404.png);
   background-repeat: no-repeat;
-  width: 100%;
-  height: auto;
-
-
+  background-size: contain;
+  background-position: center;
+  width: auto;
+  height: 90%;
+  position: relative;
+  padding: 30px 30px 30px 30px;
+  margin: 5% 30px 250px 30px;
+  @media (max-width: 576px) {
+    background-position: top;
+    margin: 5% 30px 150px 30px;
+  }
 }
 
-.error-text {
+.text {
   position: relative;
+  top: 250px;
+  left: 2%;
+  width: 95%;
   color: #2c3248;
   font-family: "Proxima Nova";
-  font-size: 3vw;
+  font-size: 42px;
   font-weight: 400;
-  text-align: center;
-  top: 450px;
+  @media (max-width: 576px) {
+    top: 150px;
+  }
 }
-
-//.buttons {
-//  margin-left: 33%;
-//  margin-top: 30px;
-//}
