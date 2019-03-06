@@ -33,7 +33,7 @@
                 </div>
 
                 <div class="col-9 col-sm-9 col-md-6 col-xl-4 text-center">
-                    <img alt="Logo" class="logo" src="../img/logo.png">
+                    <img alt="Logo" class="logo" src="./img/logo.png">
                 </div>
 
                 <div class="col-12 col-sm-12 col-md-5 col-xl-4 login text-right">
@@ -105,7 +105,135 @@
     </div>
 </header>
 
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center main-title">
+            <h1>My Orders</h1>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row my_orders">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+            <main>
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link" id="nav-processing-tab" data-toggle="tab" href="#nav-processing"
+                           role="tab" aria-controls="nav-processing" aria-selected="true">Processing Orders</a>
+                        <a class="nav-item nav-link active" id="nav-completed-tab" data-toggle="tab"
+                           href="#nav-completed" role="tab" aria-controls="nav-completed" aria-selected="false">Completed
+                            Orders</a>
+                    </div>
+                </nav>
+                <div class="tab-content bg-white rounded shadow" id="nav-tabContent">
+                    <div class="tab-pane fade" id="nav-processing" role="tabpanel" aria-labelledby="nav-processing-tab">
+                        <div class="alert alert-success">You do not have completed orders.</div>
+                    </div>
+                    <div class="tab-pane fade show active" id="nav-completed" role="tabpanel"
+                         aria-labelledby="nav-completed-tab">
+                        <div id="order_details"></div>
+                        <div class="order_info">
+                            <h3>Now processing(2)</h3>
+                            <div class="table-responsive">
+                                <table class="table table-borderless">
+                                    <thead>
+                                    <tr>
+                                        <th class="date_sort">Date</th>
+                                        <th>Order ID</th>
+                                        <th class="topic_sort">Title/topic</th>
+                                        <th>Status</th>
+                                        <th class="price_sort">Price</th>
+                                        <th>Payments</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th>18.05</th>
+                                        <td>#6708440039</td>
+                                        <td>cvhfgh</td>
+                                        <td>Payment verification</td>
+                                        <td>$ 27.65</td>
+                                        <td>
+                                            <div class="buy">Buy Now</div>
+                                        </td>
+                                        <td><a href="#" onclick="OrderDetails();">Order details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <th>18.05</th>
+                                        <td>#6708440039</td>
+                                        <td>cvhfgh</td>
+                                        <td>Payment verification</td>
+                                        <td>$ 27.65</td>
+                                        <td>
+                                            <div class="buy">Buy Now</div>
+                                        </td>
+                                        <td><a href="#" onclick="OrderDetails();">Order details</a></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="alert alert-success clearfix">
+                                        <span class="float-left">Подробности заказа при нажатии ссылки "Order details" </span>
+                                        <span class="float-right d-none d-sm-none d-md-block d-lg-block d-xl-block">👆</span>
+                                        <span class="float-right d-sm-block d-md-none d-lg-none d-xl-none">👉</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="d-none d-md-none d-lg-block col-lg-4 col-xl-4 sidebar">
+            <div class="row">
+                <div class="col-12 bg-white rounded shadow authorization">
+                    <h3>Authorization</h3>
+                    <div class="row account">
+                        <div class="col">
+                            <p>Account status: <span>standard</span></p>
+                            <p>Your Discount: <span>0% [Update to 15%]</span></p>
+                            <p>Discount code: <span>maxiaxia7@gmail.com</span></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p class="profile">Profile</p>
+                            <p class="orders">Orders</p>
+                            <p class="affiliates">Affiliate program</p>
+                            <p class="logout">Logout</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
+<!-- В идеале тут должен быть нормальный ajax запрос и подтягивать JSON, но это HTML шаблон :( -->
+<!-- Потому выводим просто содержимое страницы в HTML -->
+<script>
+    function OrderDetails() {
+        $(".order_info").addClass('display_none');
+        var check = $('#order_details');
+        $.ajax({
+            type: "GET",
+            url: "order_details.html",
+            cache: true,
+            async: true,
+            success: function (response) {
+                check.html(response);
+            }
+        });
+    }
+
+    function CloseDetails() {
+        $(".order_info").removeClass('display_none');
+        $("#order_details").empty();
+    }
+</script>
 
 <footer>
     <section>
@@ -180,7 +308,7 @@
             <a class="dropdown-item" href="404.html">Страница 404</a>
             <a class="dropdown-item" href="blog.html">Главная блог</a>
             <a class="dropdown-item" href="my_orders.html">Мои заказы</a>
-            <a class="dropdown-item" href="order_details.html">Детали заказа</a>
+            <!--<a class="dropdown-item" href="order_details.html">Детали заказа</a>-->
             <a class="dropdown-item" href="order_form.html">Форма заказа</a>
             <a class="dropdown-item" href="text_page.html">Статья блога</a>
         </div>
@@ -188,7 +316,7 @@
 </div>
 
 <!-- Подключение JavaScript файлов -->
-<script src="./js/jquery-3.3.1.slim.min.js"></script>
+<script src="./js/jquery-3.3.1.min.js"></script>
 <!-- jQuery тогда вызов Bootstrap JS 4.3.1 -->
 <script src="./js/bootstrap.min.js"></script>
 <script src="./js/bootstrap.bundle.min.js"></script>
@@ -203,10 +331,11 @@
 
 <!-- Собственный простенький Г... код :) для динамического подключения CSS файлов согласно странице -->
 <script>
-    var path = window.location.pathname;
-    var path = path.split('.').slice(0, -1).join('.').slice(1);
-    if (path != '') document.querySelector('head').innerHTML += '<link rel="stylesheet" href="./css/' + path + '.min.css">';
-    else document.querySelector('head').innerHTML += '<link rel="stylesheet" href="./css/index.min.css">';
+var path = window.location.href;
+var path = path.split('.html').slice(0, -1).join('.').slice(path.lastIndexOf("/")).slice(1);
+console.log(path);
+if (path != '') document.querySelector('head').innerHTML += '<link rel="stylesheet" href="./css/' + path + '.min.css">';
+else document.querySelector('head').innerHTML += '<link rel="stylesheet" href="./css/index.min.css">';
 </script>
 <!-- Конец -->
 
