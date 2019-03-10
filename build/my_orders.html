@@ -131,7 +131,6 @@
                     </div>
                     <div class="tab-pane fade show active" id="nav-completed" role="tabpanel"
                          aria-labelledby="nav-completed-tab">
-                        <div id="order_details"></div>
                         <div class="order_info">
                             <h3>Now processing(2)</h3>
                             <div class="table-responsive">
@@ -157,7 +156,7 @@
                                         <td>
                                             <div class="buy">Buy Now</div>
                                         </td>
-                                        <td><a href="#" onclick="OrderDetails();">Order details</a></td>
+                                        <td><a href="#" onclick="OpenDetails();">Order details</a></td>
                                     </tr>
                                     <tr>
                                         <th>18.05</th>
@@ -168,7 +167,7 @@
                                         <td>
                                             <div class="buy">Buy Now</div>
                                         </td>
-                                        <td><a href="#" onclick="OrderDetails();">Order details</a></td>
+                                        <td><a href="#" onclick="OpenDetails();">Order details</a></td>
                                     </tr>
                                     </tbody>
                                 </table>
@@ -180,6 +179,102 @@
                                         <span class="float-right d-none d-sm-none d-md-block d-lg-block d-xl-block">👆</span>
                                         <span class="float-right d-sm-block d-md-none d-lg-none d-xl-none">👉</span>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order_details display_none">
+                            <div class="row order_back" onclick="CloseDetails();">Close Details</div>
+                            <div class="row order-header">
+                                <div class="col-9">
+                                    <div class="order-name">fdsfdd</div>
+                                    Order ID: <span>#6708440039</span> Page price: <span>11.99</span> USD Pages: <span>1</span>
+                                </div>
+                                <div class="col-3 order-total">
+                                    <span>Total price</span>
+                                    <br/>
+                                    <span class="sum">27.65 USD</span>
+                                    <br/>
+                                    Time left: <span>9d 21h 26m</span>
+                                </div>
+                            </div>
+                            <div class="row order-menu">
+                                <div class="col-9 col-md-10">
+                                    <ul>
+                                        <li><a href="#">ORDER DETAILS</a></li>
+                                        <li><a href="#">MESSAGES 0 / 0</a></li>
+                                        <li><a href="#">FILES 0 / 0</a></li>
+                                        <li><a href="#">Additional order</a></li>
+                                        <li><a href="#">Extend deadline</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 col-md-2">
+                                    <a href="#" class="pay">Pay Now</a>
+                                </div>
+                            </div>
+
+                            <div class="order-data">
+                                <div class="row">
+                                    <div class="col">Subject</div>
+                                    <div class="col">--</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">Style</div>
+                                    <div class="col">APA</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">Sources</div>
+                                    <div class="col">0</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">Added</div>
+                                    <div class="col">2017-05-18 15:49</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">Type of assignment</div>
+                                    <div class="col">Essay</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">Discount</div>
+                                    <div class="col">None</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">Payment details</div>
+                                    <div class="col">Waiting for payment</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">Delivery</div>
+                                    <div class="col">2017-05-29 15:49 <span>Extend deadline</span></div>
+                                </div>
+                                <div class="row bordless">
+                                    <div class="col">Free revisions till: 2017-05-31 15:49</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">Urgency</div>
+                                    <div class="col">11 days</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">Language</div>
+                                    <div class="col">US writer</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">Order status</div>
+                                    <div class="col">Payment verification</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">Additional services</div>
+                                    <div class="col">None</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">Writer level</div>
+                                    <div class="col">High School</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">Spacing</div>
+                                    <div class="col">Double spaced</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">Writer ID</div>
+                                    <div class="col">No preferred writer</div>
                                 </div>
                             </div>
                         </div>
@@ -215,23 +310,15 @@
 <!-- В идеале тут должен быть нормальный ajax запрос и подтягивать JSON, но это HTML шаблон :( -->
 <!-- Потому выводим просто содержимое страницы в HTML -->
 <script>
-    function OrderDetails() {
+    function OpenDetails() {
         $(".order_info").addClass('display_none');
-        var check = $('#order_details');
-        $.ajax({
-            type: "GET",
-            url: "order_details.html",
-            cache: true,
-            async: true,
-            success: function (response) {
-                check.html(response);
-            }
-        });
+        $(".order_details").removeClass('display_none');
     }
 
     function CloseDetails() {
+        $(".order_details").addClass('display_none');
         $(".order_info").removeClass('display_none');
-        $("#order_details").empty();
+
     }
 </script>
 
