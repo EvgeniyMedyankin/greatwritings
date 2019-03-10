@@ -21,6 +21,9 @@ header {
       height: auto;
       width: 70%;
       margin-left: 20%;
+      &:hover {
+        filter: grayscale(50%);
+      }
       @media screen and (max-width: 767px) {
         margin-left: 0;
         float: left;

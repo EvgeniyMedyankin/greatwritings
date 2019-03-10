@@ -76,9 +76,9 @@
                             </div>
                         </div>
                         <div class="order_details display_none">
-                            <div class="row order_back" onclick="CloseDetails();">Close Details</div>
                             <div class="row order-header">
                                 <div class="col-9">
+                                    <div class="order-back" onclick="CloseDetails();"></div>
                                     <div class="order-name">fdsfdd</div>
                                     Order ID: <span>#6708440039</span> Page price: <span>11.99</span> USD Pages: <span>1</span>
                                 </div>
@@ -199,18 +199,3 @@
         </div>
     </div>
 </div>
-
-<!-- В идеале тут должен быть нормальный ajax запрос и подтягивать JSON, но это HTML шаблон :( -->
-<!-- Потому выводим просто содержимое страницы в HTML -->
-<script>
-    function OpenDetails() {
-        $(".order_info").addClass('display_none');
-        $(".order_details").removeClass('display_none');
-    }
-
-    function CloseDetails() {
-        $(".order_details").addClass('display_none');
-        $(".order_info").removeClass('display_none');
-
-    }
-</script>

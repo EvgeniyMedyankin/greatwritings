@@ -628,16 +628,15 @@
 </footer>
 
 <div class="d-flex fixed">
-    <div class="dropdown  dropup mr-1">
-        <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-            Страницы сайта
+    <div class="dropdown dropup mr-1">
+        <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false" data-offset="10,20">Страницы сайта
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
             <a class="dropdown-item" href="index.html">Главная сайта</a>
             <a class="dropdown-item" href="404.html">Страница 404</a>
             <a class="dropdown-item" href="blog.html">Главная блог</a>
             <a class="dropdown-item" href="my_orders.html">Мои заказы</a>
-            <!--<a class="dropdown-item" href="order_details.html">Детали заказа</a>-->
             <a class="dropdown-item" href="order_form.html">Форма заказа</a>
             <a class="dropdown-item" href="text_page.html">Статья блога</a>
         </div>
@@ -649,37 +648,8 @@
 <!-- jQuery тогда вызов Bootstrap JS 4.3.1 -->
 <script src="./js/bootstrap.min.js"></script>
 <script src="./js/bootstrap.bundle.min.js"></script>
-
-<script>
-    $('.dropdown-toggle').dropdown();
-    $('[data-toggle="tooltip"]').tooltip();
-    $('#myCollapsible').collapse({
-        toggle: false
-    })
-</script>
-
-<!-- Собственный простенький Г... код :) для динамического подключения CSS файлов согласно странице -->
-<script>
-var path = window.location.href;
-var path = path.split('.html').slice(0, -1).join('.').slice(path.lastIndexOf("/")).slice(1);
-console.log(path);
-if (path != '') document.querySelector('head').innerHTML += '<link rel="stylesheet" href="./css/' + path + '.min.css">';
-else document.querySelector('head').innerHTML += '<link rel="stylesheet" href="./css/index.min.css">';
-</script>
-<!-- Конец -->
-
-<!-- Простая менюшка для бургера (работает при наведении курсором и когда его убрать с меню) -->
-<script>
-    $(document).ready(function () {
-        $('#menu').mouseenter(function () {
-            $('.mobile-menu').find('.hidden').addClass('show').removeClass('hidden');
-        });
-        $('.mobile-menu').mouseleave(function () {
-            $('.mobile-menu').find('.show').addClass('hidden').removeClass('show');
-        });
-    });
-</script>
-<!-- Конец -->
+<!-- Подключение собственного JavaScript -->
+<script src="./js/main.js"></script>
 
 </body>
 </html>

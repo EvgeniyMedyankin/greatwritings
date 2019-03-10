@@ -183,9 +183,9 @@
                             </div>
                         </div>
                         <div class="order_details display_none">
-                            <div class="row order_back" onclick="CloseDetails();">Close Details</div>
                             <div class="row order-header">
                                 <div class="col-9">
+                                    <div class="order-back" onclick="CloseDetails();"></div>
                                     <div class="order-name">fdsfdd</div>
                                     Order ID: <span>#6708440039</span> Page price: <span>11.99</span> USD Pages: <span>1</span>
                                 </div>
@@ -307,21 +307,6 @@
     </div>
 </div>
 
-<!-- В идеале тут должен быть нормальный ajax запрос и подтягивать JSON, но это HTML шаблон :( -->
-<!-- Потому выводим просто содержимое страницы в HTML -->
-<script>
-    function OpenDetails() {
-        $(".order_info").addClass('display_none');
-        $(".order_details").removeClass('display_none');
-    }
-
-    function CloseDetails() {
-        $(".order_details").addClass('display_none');
-        $(".order_info").removeClass('display_none');
-
-    }
-</script>
-
 <footer>
     <section>
         <div class="container-fluid menu d-none d-xl-block text-center">
@@ -386,16 +371,15 @@
 </footer>
 
 <div class="d-flex fixed">
-    <div class="dropdown  dropup mr-1">
-        <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-            Страницы сайта
+    <div class="dropdown dropup mr-1">
+        <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false" data-offset="10,20">Страницы сайта
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
             <a class="dropdown-item" href="index.html">Главная сайта</a>
             <a class="dropdown-item" href="404.html">Страница 404</a>
             <a class="dropdown-item" href="blog.html">Главная блог</a>
             <a class="dropdown-item" href="my_orders.html">Мои заказы</a>
-            <!--<a class="dropdown-item" href="order_details.html">Детали заказа</a>-->
             <a class="dropdown-item" href="order_form.html">Форма заказа</a>
             <a class="dropdown-item" href="text_page.html">Статья блога</a>
         </div>
@@ -407,37 +391,8 @@
 <!-- jQuery тогда вызов Bootstrap JS 4.3.1 -->
 <script src="./js/bootstrap.min.js"></script>
 <script src="./js/bootstrap.bundle.min.js"></script>
-
-<script>
-    $('.dropdown-toggle').dropdown();
-    $('[data-toggle="tooltip"]').tooltip();
-    $('#myCollapsible').collapse({
-        toggle: false
-    })
-</script>
-
-<!-- Собственный простенький Г... код :) для динамического подключения CSS файлов согласно странице -->
-<script>
-var path = window.location.href;
-var path = path.split('.html').slice(0, -1).join('.').slice(path.lastIndexOf("/")).slice(1);
-console.log(path);
-if (path != '') document.querySelector('head').innerHTML += '<link rel="stylesheet" href="./css/' + path + '.min.css">';
-else document.querySelector('head').innerHTML += '<link rel="stylesheet" href="./css/index.min.css">';
-</script>
-<!-- Конец -->
-
-<!-- Простая менюшка для бургера (работает при наведении курсором и когда его убрать с меню) -->
-<script>
-    $(document).ready(function () {
-        $('#menu').mouseenter(function () {
-            $('.mobile-menu').find('.hidden').addClass('show').removeClass('hidden');
-        });
-        $('.mobile-menu').mouseleave(function () {
-            $('.mobile-menu').find('.show').addClass('hidden').removeClass('show');
-        });
-    });
-</script>
-<!-- Конец -->
+<!-- Подключение собственного JavaScript -->
+<script src="./js/main.js"></script>
 
 </body>
 </html>

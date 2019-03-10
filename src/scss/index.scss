@@ -93,13 +93,14 @@ main {
     }
   }
 
-  .about-us p {
-    color: #19152d;
-    font-family: 'Proxima Nova';
-    font-size: 20px;
-    font-weight: 300;
-    margin: 30px 0;
-    padding: 15px;
+  .about-us {
+    p {
+      color: #19152d;
+      font-family: 'Proxima Nova';
+      font-size: 20px;
+      font-weight: 300;
+      padding: 15px;
+    }
   }
 
   .banner {
@@ -188,11 +189,11 @@ main {
           text-align: center;
         }
         background-color: #8cadf4;
-        background-color: -moz-linear-gradient(left, #8cadf4 0%, #5076e7 100%);
-        background-color: -webkit-linear-gradient(left, #8cadf4 0%, #5076e7 100%);
-        background-color: linear-gradient(to right, #8cadf4 0%, #5076e7 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8cadf4', endColorstr='#5076e7', GradientType=1);
-        background: url(../img/star.svg) no-repeat 50% 50%;
+        //background-color: -moz-linear-gradient(left, #8cadf4 0%, #5076e7 100%);
+        //background-color: -webkit-linear-gradient(left, #8cadf4 0%, #5076e7 100%);
+        //background-color: linear-gradient(to right, #8cadf4 0%, #5076e7 100%);
+        //filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8cadf4', endColorstr='#5076e7', GradientType=1);
+        //background: url(../img/star.svg) no-repeat 50% 50%;
         padding: 17% 10%;
       }
     }
@@ -204,10 +205,6 @@ main {
       ol {
         padding-top: 10%;
         list-style: none;
-        @media (max-width: 1200px) {
-          padding-inline-start: 0px;
-        }
-
         li {
           color: #19152d;
           font-family: "Proxima Nova";
@@ -543,11 +540,15 @@ main {
           padding: 5px 25px 15px 25px;
         }
       }
-
+      &:hover {
+        position:absolute;
+        top: -15px;
+      }
       @media (max-width: 992px) {
         width: 94%;
         margin-top: 0;
       }
+
     }
 
     .privacy {
@@ -579,6 +580,10 @@ main {
           text-align: center;
           padding: 5px 25px 15px 25px;
         }
+      }
+      &:hover {
+        position:absolute;
+        top: -15px;
       }
 
       @media (max-width: 992px) {
@@ -617,7 +622,10 @@ main {
           padding: 5px 25px 15px 25px;
         }
       }
-
+      &:hover {
+        position:absolute;
+        top: -15px;
+      }
       @media (max-width: 992px) {
         width: 94%;
         margin-top: 500px;
