@@ -107,6 +107,14 @@ footer {
         margin-left: -40px;
         line-height: 25px;
         li {
+          a {
+            color: #fff;
+            text-decoration: none;
+            &:hover {
+              cursor: pointer;
+              color: #8e97ee;
+            }
+          }
           &:before {
             font-family: 'FontAwesome';
             font-weight: 900;
@@ -116,6 +124,66 @@ footer {
             margin-right: 10px;
           }
         }
+      }
+    }
+    .address {
+      margin: 5px 0;
+      color: #fff;
+      a {
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+          cursor: pointer;
+          color: #8e97ee;
+        }
+      }
+      &:before {
+        font-family: 'FontAwesome';
+        font-weight: 900;
+        content: '\f041';
+        height: 18px;
+        color: #65b5eb;
+        margin-right: 10px;
+      }
+    }
+    .phone {
+      margin: 5px 0;
+      color: #fff;
+      a {
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+          cursor: pointer;
+          color: #8e97ee;
+        }
+      }
+      &:before {
+        font-family: 'FontAwesome';
+        font-weight: 900;
+        content: '\f095';
+        height: 18px;
+        color: #65b5eb;
+        margin-right: 10px;
+      }
+    }
+    .email {
+      margin: 5px 0;
+      color: #fff;
+      a {
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+          cursor: pointer;
+          color: #8e97ee;
+        }
+      }
+      &:before {
+        font-family: 'FontAwesome';
+        font-weight: 900;
+        content: '\f0e0';
+        height: 18px;
+        color: #65b5eb;
+        margin-right: 10px;
       }
     }
   }
