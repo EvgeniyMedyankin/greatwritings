@@ -1,3 +1,4 @@
+@import '_variables.scss';
 .main-title {
   color: #2c3248;
   font-family: "Proxima Nova - Semibold";
@@ -13,12 +14,19 @@
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 20px;
+
     .col {
       padding: 0;
     }
   }
+
   .post {
-    background-color: #fff;
+    background-color: $white-color;
+
+    a {
+      text-decoration: none;
+    }
+
     h2 {
       padding: 25px 25px 0 25px;
       color: #2c3248;
@@ -26,12 +34,14 @@
       font-size: 32px;
       font-weight: 400;
     }
+
     .info {
       padding: 10px 25px;
       color: #2c3248;
       font-family: "Proxima Nova";
       font-size: 16px;
       font-weight: 400;
+
       .date {
         &:before {
           font-family: "FontAwesome";
@@ -39,14 +49,17 @@
           padding-right: 10px;
         }
       }
+
       .comments {
         margin: 0px 20px;
+
         &:before {
           font-family: "FontAwesome";
           content: '\f27b';
           padding-right: 10px;
         }
       }
+
       .share {
         &:before {
           font-family: "FontAwesome";
@@ -55,13 +68,16 @@
         }
       }
     }
+
     img {
       width: 100%;
       height: auto;
     }
+
     .tags {
-    padding: 20px 25px 10px 25px;
+      padding: 20px 25px 10px 25px;
     }
+
     p {
       padding: 5px 25px;
       color: #2c3248;
@@ -71,6 +87,7 @@
     }
   }
 }
+
 .sidebar {
   .row {
     margin-left: 0;
@@ -80,6 +97,7 @@
 
   .choose {
     padding: 25px 15px;
+
     h3 {
       color: #5175e7;
       font-family: "Proxima Nova";
@@ -88,6 +106,7 @@
       text-transform: uppercase;
       text-align: center;
     }
+
     ol {
       list-style: none;
       padding-inline-start: 0px;
@@ -98,11 +117,13 @@
         font-size: 16px;
         font-weight: 400;
         margin: 10px;
+
         span {
           display: block;
           margin-left: 30px;
           margin-top: -25px;
-      }
+        }
+
         &:before {
           font-family: "FontAwesome";
           content: '\f00c';
@@ -116,6 +137,7 @@
 
   .discounts {
     padding: 25px 15px;
+
     h3 {
       color: #5175e7;
       font-family: "Proxima Nova";
@@ -124,11 +146,13 @@
       text-transform: uppercase;
       text-align: center;
     }
+
     p {
       text-align: center;
       font-family: "Proxima Nova";
       font-size: 20px;
     }
+
     .discount {
       color: #2c3248;
       font-family: "Proxima Nova";
@@ -138,6 +162,7 @@
       line-height: 25px;
       margin-top: 20px;
     }
+
     .red {
       span {
         color: #ff4475;
@@ -146,6 +171,7 @@
         font-weight: 400;
         text-transform: uppercase;
       }
+
       &:before {
         position: relative;
         top: 35px;
@@ -159,6 +185,7 @@
         display: block;
       }
     }
+
     .violet {
       span {
         color: #b85dec;
@@ -167,6 +194,7 @@
         font-weight: 400;
         text-transform: uppercase;
       }
+
       &:before {
         position: relative;
         top: 35px;
@@ -184,6 +212,7 @@
 
   .posts {
     padding: 25px 15px;
+
     h3 {
       color: #5175e7;
       font-family: "Proxima Nova";
@@ -192,19 +221,23 @@
       text-transform: uppercase;
       text-align: center;
     }
+
     .post {
       padding: 0 15px;
       margin-top: 15px;
+
       a {
         color: #2c3248;
         font-family: "Proxima Nova";
         font-size: 16px;
         font-weight: 400;
         text-decoration: none;
+
         &:hover {
           color: #5175e7;
         }
       }
+
       span {
         display: block;
         color: #2c3248;

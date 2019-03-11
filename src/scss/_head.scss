@@ -1,6 +1,6 @@
-
+@import '_variables.scss';
 header {
-  background-color: #fff;
+  background-color: $white-color;
   box-shadow: 0 0 25px 1px #c2c0c2;
 
   .head {

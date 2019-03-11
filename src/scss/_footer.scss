@@ -1,25 +1,31 @@
-
+@import '_variables.scss';
 footer {
   .menu {
     background: #30323a;
-    color: #fff;
+    color: $white-color;
     padding: 15px 0 1px 0;
+
     ul {
       list-style: none;
+
       li {
         display: inline;
         font-size: 13px;
+
         &:after {
           content: ' | ';
           margin: 0 7px;
         }
+
         &:last-child:after {
           content: '';
         }
       }
     }
+
     a {
-      color: #fff;
+      color: $white-color;
+
       &:hover {
         text-decoration: none;
         color: #8e97ee;
@@ -27,13 +33,15 @@ footer {
       }
     }
   }
+
   .information {
     background-color: #0a1127;
-    color: #fff;
+    color: $white-color;
     font-size: 13px;
     padding-top: 20px;
+
     h3 {
-      color: #ffffff;
+      color: $white-color;
       font-family: 'Proxima Nova - Semibold';
       font-size: 20px;
       font-weight: 400;
@@ -41,6 +49,7 @@ footer {
       text-transform: uppercase;
       margin-bottom: 20px;
     }
+
     .container {
       .row {
         .col {
@@ -48,12 +57,15 @@ footer {
         }
       }
     }
+
     .letter {
       width: 100%;
       position: relative;
+
       input {
         border: none;
       }
+
       .input {
         background: #0a1127;
         width: 100%;
@@ -61,17 +73,19 @@ footer {
         -moz-box-sizing: border-box;
         box-sizing: border-box;
         border-radius: 20px;
-        color: #fff;
+        color: $white-color;
         outline: none;
         font-size: 12px;
         border: 1px solid #394050;
+
         &:focus {
           box-shadow: none;
-          background: #fff;
+          background: $white-color;
           border: 1px solid #404c66;
           color: #000;
         }
       }
+
       .submit {
         position: absolute;
         top: 0;
@@ -82,39 +96,46 @@ footer {
         height: 37px;
         cursor: pointer;
         border: none;
+
         &:hover {
           opacity: 0.8;
         }
+
         &:before {
           font-family: 'FontAwesome';
           font-weight: 900;
           content: '\f054';
           width: 100%;
           height: 20px;
-          color: #fff;
+          color: $white-color;
         }
       }
     }
+
     .contacts {
       i {
         color: #65b5eb;
         margin-right: 5px;
       }
     }
+
     .links {
       ul {
         list-style: none;
         margin-left: -40px;
         line-height: 25px;
+
         li {
           a {
-            color: #fff;
+            color: $white-color;
             text-decoration: none;
+
             &:hover {
               cursor: pointer;
               color: #8e97ee;
             }
           }
+
           &:before {
             font-family: 'FontAwesome';
             font-weight: 900;
@@ -126,17 +147,21 @@ footer {
         }
       }
     }
+
     .address {
       margin: 5px 0;
-      color: #fff;
+      color: $white-color;
+
       a {
-        color: #fff;
+        color: $white-color;
         text-decoration: none;
+
         &:hover {
           cursor: pointer;
           color: #8e97ee;
         }
       }
+
       &:before {
         font-family: 'FontAwesome';
         font-weight: 900;
@@ -146,17 +171,21 @@ footer {
         margin-right: 10px;
       }
     }
+
     .phone {
       margin: 5px 0;
-      color: #fff;
+      color: $white-color;
+
       a {
-        color: #fff;
+        color: $white-color;
         text-decoration: none;
+
         &:hover {
           cursor: pointer;
           color: #8e97ee;
         }
       }
+
       &:before {
         font-family: 'FontAwesome';
         font-weight: 900;
@@ -166,17 +195,21 @@ footer {
         margin-right: 10px;
       }
     }
+
     .email {
       margin: 5px 0;
-      color: #fff;
+      color: $white-color;
+
       a {
-        color: #fff;
+        color: $white-color;
         text-decoration: none;
+
         &:hover {
           cursor: pointer;
           color: #8e97ee;
         }
       }
+
       &:before {
         font-family: 'FontAwesome';
         font-weight: 900;

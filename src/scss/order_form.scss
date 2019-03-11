@@ -1,3 +1,4 @@
+@import '_variables.scss';
 .main-title {
   color: #2c3248;
   font-family: "Proxima Nova - Semibold";
@@ -32,8 +33,8 @@
   .form-button {
     cursor: pointer;
     border: 1px solid #b7b7b7;
-    background-color: #ffffff;
-    background-image: linear-gradient(to top, #ebebeb 0%, #ffffff 100%);
+    background-color: $white-color;
+    background-image: linear-gradient(to top, #ebebeb 0%, $white-color 100%);
     padding: 10px 25px;
     border-radius: 20px;
     margin: 10px 15px;
@@ -42,8 +43,8 @@
   .image-button {
     cursor: pointer;
     border: 1px solid #b7b7b7;
-    background-color: #ffffff;
-    background-image: linear-gradient(to top, #ebebeb 0%, #ffffff 100%);
+    background-color: $white-color;
+    background-image: linear-gradient(to top, #ebebeb 0%, $white-color 100%);
     padding: 10px 25px;
     border-radius: 20px;
     margin: 10px 0;
@@ -69,8 +70,8 @@
   .browse-button input[type="button"] {
     cursor: pointer;
     border: 1px solid #b7b7b7;
-    background-color: #ffffff;
-    background-image: linear-gradient(to top, #ebebeb 0%, #ffffff 100%);
+    background-color: $white-color;
+    background-image: linear-gradient(to top, #ebebeb 0%, $white-color 100%);
     padding: 10px 25px;
     border-radius: 20px;
   }
@@ -125,7 +126,7 @@
     background: linear-gradient(to bottom, #7fc0ef 0%, #0d90f3 97%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7fc0ef', endColorstr='#0d90f3', GradientType=0);
     border-radius: 50%;
-    color: #fff;
+    color: $white-color;
     height: 32px;
     width: 32px;
     padding: 2px 8px 2px 8px;

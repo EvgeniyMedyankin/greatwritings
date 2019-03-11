@@ -1,4 +1,4 @@
-
+@import '_variables.scss';
 .order_details {
   span {
     font-family: "Proxima Nova";
@@ -12,7 +12,7 @@
     font-family: "Proxima Nova";
     font-size: 18px;
     font-weight: 400;
-    background-color: #fff;
+    background-color: $white-color;
     position: relative;
     top: 0;
     right: 25px;
@@ -73,7 +73,7 @@
 
     .pay {
       background-color: #87a8f3;
-      color: #fff;
+      color: $white-color;
       font-family: "Proxima Nova";
       font-size: 12px;
       font-weight: 300;

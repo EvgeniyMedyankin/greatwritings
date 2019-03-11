@@ -1,3 +1,4 @@
+@import '_variables.scss';
 .main-title {
   color: #2c3248;
   font-family: "Proxima Nova - Semibold";
@@ -25,8 +26,8 @@
     font-family: "Proxima Nova";
     font-size: 20px;
     font-weight: 400;
-    border: 1px solid #fff;
-    background-color: #fff;
+    border: 1px solid $white-color;
+    background-color: $white-color;
   }
 
   .nav-tabs .nav-link {
@@ -81,7 +82,7 @@
 
       .buy {
         background-color: #87a8f3;
-        color: #fff;
+        color: $white-color;
         font-family: "Proxima Nova";
         font-size: 12px;
         font-weight: 300;

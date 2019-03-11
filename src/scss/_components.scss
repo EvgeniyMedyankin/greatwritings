@@ -1,3 +1,4 @@
+@import '_variables.scss';
 .btn {
   padding: 7px 20px;
   margin: 5px;
@@ -5,9 +6,9 @@
 }
 
 .pink-btn {
-  border: 2px solid #fff;
+  border: 2px solid $white-color;
   background-image: linear-gradient(to top, #9219d7 0%, #c16ef0 100%);
-  color: #fff;
+  color: $white-color;
 
   &:hover {
     color: #ba64eb;
@@ -17,9 +18,9 @@
 }
 
 .blue-btn {
-  border: 2px solid #fff;
+  border: 2px solid $white-color;
   background-image: linear-gradient(to top, #5075e7 0%, #8cadf4 100%);
-  color: #fff;
+  color: $white-color;
 
   &:hover {
     color: #6083ea;
@@ -29,14 +30,14 @@
 }
 
 .white-btn {
-  border: 2px solid #fff;
+  border: 2px solid $white-color;
   background-color: transparent;
-  color: #fff;
+  color: $white-color;
 
   &:hover {
-    color: #fff;
+    color: $white-color;
     background-color: transparent;
-    border: 2px solid #fff;
+    border: 2px solid $white-color;
   }
 }
 
@@ -58,25 +59,31 @@
   padding: .5em .9em;
   border-radius: 10rem;
 }
+
 .blue-badge {
   border: 1px solid #567be8;
   color: #567be8;
+
   &:hover {
     border: 1px solid lighten(#567be8, 10%);
     color: lighten(#567be8, 10%);
   }
 }
+
 .pink-badge {
   border: 1px solid #b85dec;
   color: #b85dec;
+
   &:hover {
     border: 1px solid lighten(#b85dec, 10%);
     color: lighten(#b85dec, 10%);
   }
 }
+
 .red-badge {
   border: 1px solid #ff4475;
   color: #ff4475;
+
   &:hover {
     border: 1px solid lighten(#ff4475, 10%);
     color: lighten(#ff4475, 10%);
